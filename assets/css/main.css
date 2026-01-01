@@ -446,7 +446,11 @@ a {
 }
 
 .head-inner-wrap {
-  
+  float: left;
+}
+
+.head-right {
+  float: right;
 }
 
 .bottom-link {
@@ -579,4 +583,12 @@ a {
   .head-menu-wrap {
     bottom: 15px;
   }
+}
+
+.extra a,
+.extra .paragraph-text a,
+.extra-links a,
+.extra-links .head-icon,
+.bottom-link a {
+  color: #fff;
 }
