@@ -12,12 +12,14 @@ let render_projects = (slug) => {
     let projects_obj = [
         {
             image: 'assets/images/mentors.jpg',
-            link: 'https://github.com/abhn/Mporter',
-            title: 'Mporter',
-            demo: 'https://mporter.co',
-            technologies: ['Flask', 'Celery', 'Python'],
-            description: "Flask web application for easy reporting updates to one's mentor. Multi-user support, easy to deploy and use.",
-            categories: ['featured', 'webdev']
+            link: 'https://github.com/cse110-sp24-group11/cse110-sp24-group11',
+            title: '11:11 Dev Journal',
+            date: "Fall 2023",
+            categories: ['featured'],
+            demo: 'https://cse110-sp24-group11.github.io/cse110-sp24-group11/assets/src/calendar/index.html',
+            technologies: ['Full-Stack', 'E2E Testing'],
+            description: "A built-from-scratch CRUD journaling web app for developers. Uses a CI/CD pipeline via GitHub Actions and a full testing suite via Jest and Puppeteer.",
+            course: "CSE 110 at UC San Diego"
         },
     ]
 
@@ -49,14 +51,20 @@ let project_mapper = project => {
                 <div class="card__content card__padding">
         
                     <article class="card__article">
-                        <h2><a href="${project.link}">${project.title}</a></h2>
-        
+                        <h2 class="project-title"><a href="${project.link}">${project.title}</a>
+                            ${project.date ? `<span class="post-date">${project.date}</span>` : ''}
+                        </h2>
+
                         <p class="paragraph-text-normal">${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : ''}</p>
+
+                        ${project.course ? `<p class="paragraph-text-normal"><strong>Course:</strong> ${project.course}</p>` : ''}
+
+                        ${project.categories && project.categories.length ? `<div class="project-tags">${project.categories.map(cat => `<span class="project-tag-item">${cat}</span>`).join('')}</div>` : ''}
                     </article>
 
                                 
                     <div class="card__meta">
-                        ${project.technologies.map(tech =>
+                        ${(project.technologies || []).map(tech =>
                             `<span class="project-technology paragraph-text-normal">${tech}</span>`
                         ).join('')}
                     </div>
