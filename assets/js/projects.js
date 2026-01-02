@@ -16,7 +16,7 @@ let render_projects = (slug) => {
             title: '11:11 Dev Journal',
             date: "Fall 2023",
             categories: ['featured'],
-            demo: 'https://cse110-sp24-group11.github.io/cse110-sp24-group11/assets/src/calendar/index.html',
+            demo: 'https://cse110-sp24-group11.github.io/cse110-sp24-group11/assets/src/front-page/index.html',
             technologies: ['Full-Stack', 'E2E Testing'],
             description: "A built-from-scratch CRUD journaling web app for developers. Uses a CI/CD pipeline via GitHub Actions and a full testing suite via Jest and Puppeteer.",
             course: "CSE 110 at UC San Diego"
@@ -56,10 +56,6 @@ let project_mapper = project => {
                         </h2>
 
                         <p class="paragraph-text-normal">${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : ''}</p>
-
-                        ${project.course ? `<p class="paragraph-text-normal"><strong>Course:</strong> ${project.course}</p>` : ''}
-
-                        ${project.categories && project.categories.length ? `<div class="project-tags">${project.categories.map(cat => `<span class="project-tag-item">${cat}</span>`).join('')}</div>` : ''}
                     </article>
 
                                 
@@ -67,6 +63,8 @@ let project_mapper = project => {
                         ${(project.technologies || []).map(tech =>
                             `<span class="project-technology paragraph-text-normal">${tech}</span>`
                         ).join('')}
+
+                        ${project.course ? `<p class="paragraph-text-normal"> ${project.course}</p>` : ''}
                     </div>
 
                 </div>
