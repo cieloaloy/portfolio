@@ -451,7 +451,7 @@ a {
 
 .head-right {
   float: right;
-  margin: 20px;
+  margin-left: 100px;
 }
 
 .bottom-link {
