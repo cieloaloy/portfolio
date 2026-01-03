@@ -261,7 +261,8 @@ img {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  grid-auto-rows: auto;
+  grid-auto-rows: 1fr;
+  align-items: stretch;
   grid-row-gap: 20px;
   grid-column-gap: 10px;
   -webkit-box-pack: space-evenly;
@@ -304,6 +305,18 @@ img {
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
   color: #222;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card {
@@ -534,6 +547,7 @@ a {
 
   #nav {
     background-attachment: unset;
+    background-image: url(../images/forestbg.JPEG);
   }
 
   .head-title {
