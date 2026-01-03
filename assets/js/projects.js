@@ -18,7 +18,7 @@ let render_projects = (slug) => {
             categories: ['featured'],
             demo: '',
             technologies: ['Python', 'Machine Learning'],
-            description: "Utilized Jaccard similarity and Logistic Regression to enhance content recommendation on Hacker News via analyzing user behavior and article metadata.",
+            description: "Used Jaccard similarity and Logistic Regression to improve content recommendation on Hacker News by analyzing user interactions and article metadata.",
             course: "CSE 158 at UC San Diego"
         },
         {
@@ -29,7 +29,7 @@ let render_projects = (slug) => {
             categories: ['featured'],
             demo: '',
             technologies: ['Java', 'Operating Systems'],
-            description: "Implemented key components of the Nachos operating system, including thread management, synchronization primitives, and virtual memory.",
+            description: "Recreated components of the Nachos operating system, including threading, synchronization, and virtual memory.",
             course: "CSE 120 at UC San Diego"
         },
         {
