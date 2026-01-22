@@ -154,8 +154,8 @@ img {
 .projects-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33.3333% 33.3333% 33.3333%;
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   grid-gap: 10px;
 }
 
@@ -208,9 +208,8 @@ img {
 }
 
 .section-wrapper:nth-child(odd) {
-  /* background: url(../images/background.png);
-  background-repeat: repeat; */
-  background: #0B6099;
+  background: url(../images/background.png);
+  background-repeat: repeat;
 }
 
 .section-wrapper:nth-child(odd) .section-heading {
@@ -593,14 +592,6 @@ a {
   }
 }
 
-/* breakpoint: use 2 columns on medium screens */
-@media screen and (max-width: 900px) {
-  .projects-wrapper {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media screen and (max-height: 450px) and (max-width: 600px) {
   .head {
     min-height: 525px;
@@ -629,33 +620,4 @@ a {
 
 .head .section {
   min-height: 0;
-}
-
-/* Make project cards in the grid have equal heights */
-.projects-wrapper .wrapper {
-  display: flex;
-}
-
-.projects-wrapper .card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.card__image {
-  flex: 0 0 auto;
-}
-
-.card__content {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.card__article {
-  flex: 1 1 auto;
-}
-
-.card__meta {
-  margin-top: auto;
 }
