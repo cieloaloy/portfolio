@@ -208,7 +208,7 @@ img {
 }
 
 .section-wrapper:nth-child(odd) {
-  background: url(../images/background.png);
+  background: url(../images/newbg.png);
   background-repeat: repeat;
 }
 
@@ -285,7 +285,7 @@ img {
   color: #fff;
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 
-  background: url(../images/background.png);
+  background: url(../images/newbg.png);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -455,7 +455,7 @@ img {
 }
 
 #nav {
-  background: url(../images/background.png);
+  background: url(../images/newbg.png);
   background-repeat: repeat;
 }
 
