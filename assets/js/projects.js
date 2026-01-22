@@ -10,7 +10,18 @@ let render_projects = (slug) => {
     $(`#${slug}`).addClass('white-button-hover');
     // sort by recency, include course info, truncate list by default
     let projects_obj = [
-        {
+        {  // in progress
+            image: 'assets/images/wikitext.png',
+            link: '',
+            title: 'Fitness Analysis',
+            date: "Winter 2026",
+            categories: ['featured'],
+            demo: '',
+            technologies: ['Python', 'Data Science'],
+            description: "(Work In Progress) Used DS methods towards a group project to analyze fitness data.",
+            course: "COGS 108 at UC San Diego"
+        },
+        {   // in progress
             image: 'assets/images/wikitext.png',
             link: '',
             title: 'Reinventing Hacker News',
@@ -21,18 +32,18 @@ let render_projects = (slug) => {
             description: "Used Jaccard similarity and Logistic Regression to improve content recommendation on Hacker News by analyzing user interactions and article metadata.",
             course: "CSE 158 at UC San Diego"
         },
-        {
-            image: 'assets/images/wikitext.png',
-            link: '',
+        {   // completed
+            image: 'assets/images/nachos.png',
+            link: 'https://en.wikipedia.org/wiki/Not_Another_Completely_Heuristic_Operating_System',
             title: 'Nachos Operating System',
             date: "Fall 2025",
             categories: ['featured'],
             demo: '',
             technologies: ['Java', 'Operating Systems'],
-            description: "Recreated components of the Nachos operating system, including threading, synchronization, and virtual memory.",
+            description: "Recreated components of the Nachos operating system, including threading, synchronization, and virtual memory. Demo available upon request.",
             course: "CSE 120 at UC San Diego"
         },
-        {
+        {   // completed
             image: 'assets/images/wikitext.png',
             link: 'https://github.com/cieloaloy/wikipedia-text-categorization',
             title: 'Wikipedia Text Categorization',
@@ -43,7 +54,7 @@ let render_projects = (slug) => {
             description: "A machine learning experiment that classifies Wikipedia articles using NLP across a Naive Bayes model and SVM.",
             course: "CSE 151A at UC San Diego"
         },
-        {
+        {   // completed
             image: 'assets/images/1111.png',
             link: 'https://github.com/cse110-sp24-group11/cse110-sp24-group11',
             title: '11:11 Dev Journal',
@@ -54,7 +65,7 @@ let render_projects = (slug) => {
             description: "A built-from-scratch CRUD journaling web app for developers. Uses a CI/CD pipeline via GitHub Actions and a full testing suite via Jest and Puppeteer.",
             course: "CSE 110 at UC San Diego"
         },
-        {
+        {   // completed
             image: 'assets/images/15lab.png',
             link: 'https://cieloaloy.github.io/cse15l-lab-reports/',
             title: 'Software Techniques Labs',
