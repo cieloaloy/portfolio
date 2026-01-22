@@ -21,13 +21,13 @@ let render_projects = (slug) => {
             description: "(Work In Progress) Used DS methods towards a group project to analyze fitness data.",
             course: "COGS 108 at UC San Diego"
         },
-        {   // in progress
-            image: 'assets/images/wikitext.png',
-            link: '',
+        {   // completed
+            image: 'assets/images/rhn.png',
+            link: 'https://github.com/cieloaloy/reinventing-hacker-news',
             title: 'Reinventing Hacker News',
             date: "Fall 2025",
             categories: ['featured'],
-            demo: '',
+            demo: 'https://github.com/cieloaloy/reinventing-hacker-news/blob/main/hn_homefeed.ipynb',
             technologies: ['Python', 'Machine Learning'],
             description: "Used Jaccard similarity and Logistic Regression to improve content recommendation on Hacker News by analyzing user interactions and article metadata.",
             course: "CSE 158 at UC San Diego"
