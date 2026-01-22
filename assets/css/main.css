@@ -154,8 +154,8 @@ img {
 .projects-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 33.3333% 33.3333% 33.3333%;
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
 
@@ -208,8 +208,9 @@ img {
 }
 
 .section-wrapper:nth-child(odd) {
-  background: url(../images/background.png);
-  background-repeat: repeat;
+  /* background: url(../images/background.png);
+  background-repeat: repeat; */
+  background: #0B6099;
 }
 
 .section-wrapper:nth-child(odd) .section-heading {
@@ -589,6 +590,14 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+/* breakpoint: use 2 columns on medium screens */
+@media screen and (max-width: 900px) {
+  .projects-wrapper {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
