@@ -621,3 +621,32 @@ a {
 .head .section {
   min-height: 0;
 }
+
+/* Make project cards in the grid have equal heights */
+.projects-wrapper .wrapper {
+  display: flex;
+}
+
+.projects-wrapper .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card__image {
+  flex: 0 0 auto;
+}
+
+.card__content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__article {
+  flex: 1 1 auto;
+}
+
+.card__meta {
+  margin-top: auto;
+}
